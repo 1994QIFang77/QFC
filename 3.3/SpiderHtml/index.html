@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>spider</title>
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src = './js/jquery-1.11.1.min.js'></script>
+</head>
+
+<body>
+    <div class="xc_layout">
+        <div class="xc_form">
+            <input type="text" class="input-small" id="searchString_id" placeholder="输入文章链接">
+            <button type="button" class="fbtn" id="queryBtn">添加</button>
+        </div>
+        <table class="_table">
+            <thead class=' theadCss'>
+                <tr>
+                    <th>标题</th>
+                    <th>字数</th>
+                    <th>中文字数</th>
+                    <th>英文字数</th>
+                    <th>标点符号数</th>
+                </tr>
+            </thead>
+            <tbody class="main" >
+            </tbody>
+        </table>
+        <div id="page" class="page"></div>
+    </div>
+    <script src='js/index.js'></script>
+    <script src="js/page.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+		<title>航班</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/index.css">
+		<script src = './js/jquery-1.11.1.min.js'></script>
+		<script src="https://cdn.bootcss.com/handlebars.js/2.0.0/handlebars.min.js"></script>
+		<!-- handlebars页面模板 -->
+		<script id="cr-template" type="text/x-handlebars-template">
+			{{#each this}}
+			<div class="center_list">
+				<div class="card_top">
+					<div class="card_top_1">
+						<div class="card_top_1_1">{{departdate}}</div>
+						<div class="card_top_1_2">{{leavePort}}{{leaveBuilding}}</div>
+					</div>
+					<div class="icon_arrive"></div>
+					<div class="card_top_3">
+						<div class="card_top_3_1">{{arrivaldate}}</div>
+						<div class="card_top_3_2">{{arrivePort}}{{arriveBuilding}}</div>
+					</div>
+				</div>
+				<div class="card_right">
+					<div class="card_right_1">¥&nbsp;{{price}}</div>
+					<div class="card_right_2">{{discount}}</div>
+					<div class="card_right_3">
+						{{#if rise}}
+						<span>持续涨价中</span>
+						{{/if}}
+					</div>
+				</div>
+				<div class="card_bot">{{airlineCompany}}{{flightNo}}&nbsp;{{craft}}({{craftType}})
+					{{#if together}}
+					<span>共享</span>
+					{{/if}}
+				</div>
+			</div>	
+			{{/each}}
+		</script>
+</head>
+<body>
+   <!--页面容器-->
+   <div class="xc_layout">
+		<div class="xc_header">
+  			<div class="xc_header_box">
+				<div class="icon_back"></div>
+				<div class="xc_header_box_div">北京->上海</div>
+				<div class="icon_search"></div>
+			</div>
+		</div>
+		<div class="xc_taber">
+		    <div class="xc_taber_box" id="scrollSearchDiv_taber">
+	        <div class="xc_taber_boxl">
+                    <div class="xc_taber_boxl_1">
+						<div>06-19</div>
+						<div>今天</div>
+						<div>¥ 290</div>
+					</div>
+					<div class="xc_taber_boxl_2">
+						<div id="Hover">
+							<div>06-20</div>
+							<div>周六</div>
+							<div>¥ 269</div>
+						</div>
+					</div>
+					<div class="xc_taber_boxl_3">
+						<div>
+							<div>06-21</div>
+							<div>周日</div>
+							<div>¥ 280</div>
+						</div>
+					</div>
+					<div class="xc_taber_boxl_4">
+						<div>
+							<div>06-22</div>
+							<div>周一</div>
+							<div>¥ 272</div>
+						</div>
+					</div>
+					<div class="xc_taber_boxl_5">
+						<div>
+							<div>06-23</div>
+							<div>周二</div>
+							<div>¥ 294</div>
+						</div>
+					</div>
+	        </div>
+				<div class="xc_taber_boxr">
+					<div class="icon_line"></div>
+					<div class="xc_taber_boxr_1">
+						<div class="icon_calendar"></div>
+						<div class='xc_taber_boxr_text'>更多日期</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="center">
+			    <div class="center_wh" id="center_wh"></div>
+				<div class="center_list">
+					<script src = './js/HandlebarsHTML.js'></script>
+			    </div>	
+		</div>
+		<div  class="xc_footer">
+			<div class="footer_1">
+				<div class="footer" id ="scrollSearchDiv_footer">
+					<div class="footerBox">
+						<div class="footer_box">
+							<div class="footer_box_screen">
+								<div class="icon_screen"></div>
+								<div class="footer_box_screen_text">筛选</div>
+							</div>
+							<div class="footer_box_sort">
+								<div class="icon_sort"></div>
+								<div class="footer_box_sort_text">推荐排序</div>
+							</div>
+							<div class="footer_box_time">
+								<div class="icon_time"></div>
+								<div class="footer_box_time_text">时间</div>
+							</div>
+							<div class="footer_box_price">
+								<div class="icon_price"></div>
+								<div class="footer_box_price_text">价格</div>
+							</div>
+						</div>
+				    </div>
+				</div>
+		    </div>
+	    </div>
+    </div>
+      <script src = './js/ScrollHTML.js'></script>
+</body>
+</html>

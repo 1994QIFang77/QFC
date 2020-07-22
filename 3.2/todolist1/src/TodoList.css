@@ -1,0 +1,58 @@
+.container {
+	text-align: center;
+	margin: 100px 30%;
+	padding: 20px 0;
+	height: 100%;
+	border-radius: 5px;
+	border: 2px solid #E8E8E8;
+}
+
+@media screen and (max-width: 767px) {
+	.container {
+		margin: 20px 5%;
+	}
+
+	h3 {
+		margin-left: 0;
+	}
+}
+
+ul {
+	text-align: left;
+	padding: 0;
+	margin: 20px 4%;
+	border-radius: 5px;
+}
+
+ul li {
+	list-style: none;
+	line-height: 50px;
+	border-top: 1px #bbb solid;
+	border-left: 1px #bbb solid;
+	border-right: 1px #bbb solid;
+	padding: 0 20px;
+}
+
+ul li:first-child {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+ul li:last-child {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom: 1px #bbb solid;
+}
+
+ul li:hover > .delete-btn {
+	display: block;
+}
+
+.delete-btn {
+	color: #ccc;
+	float: right;
+	cursor: pointer;
+	display: none;
+	
+}
+

@@ -1,0 +1,45 @@
+.dialog {
+	text-align: left;
+	margin: 0 5%;
+	padding: 30px 0;
+	
+}
+
+.dialog div {
+	overflow: auto;	
+}
+
+h3{
+	display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+	padding-top: 10px;
+	
+	 
+}
+
+input[type="text"] {
+	line-height: 40px;
+	float: right;
+	width: 78%;
+	border-radius: 5px;
+	border: none;
+	font-size: 16px;
+	box-sizing: border-box;
+	padding: 0 5px;
+	border: 1px #ccc solid;
+	outline: none;
+	box-shadow: 0 0 10px #ccc;
+}
+.btn {
+	border: none;
+	background-color: #2D79B9;
+	height: 40px;
+	width: 110px;
+	font-size: 18px;
+	color: #fff;
+	margin-top: 20px;
+	border-radius: 5px;
+	float: right;
+}
+

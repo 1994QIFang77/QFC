@@ -1,0 +1,23 @@
+{
+  "name": "contentcounter_spider",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "bufferhelper": "^0.2.1",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "iconv-lite": "^0.6.1",
+    "superagent": "^5.3.1",
+    "supervisor": "^0.12.0"
+  },
+  "devDependencies": {
+    "mysql": "^2.18.1"
+  }
+}
